@@ -1,0 +1,76 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: CSSclasses
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  CSSclasses is a one day event for people who are interested in learning how 
+  they can create and manipulate elements on a website.
+keywords: >-
+  CSS, HTML, learning, co-learning, workshop, frontend, web developement
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cssclass.es/" # the base hostname & protocol for your site, e.g. http://example.com
+faviconurl: "/assets/favicons"
+twitter_username: cssclasses
+github_username:  cssclasses
+
+# Build settings
+markdown: kramdown
+source: source
+sass:
+  sass_dir: assets/sass
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+navigation:
+  - title: Home
+    url: /
+  - title: Learning Materials
+    url: /materials/
+  - title: About
+    url: /about/
+  - title: Coaches
+    url: /coaches/
+  - title: Attendees
+    url: /attendees/
+  - title: Run Your Own Event
+    url: /run-your-own-event/
+  - title: Code of Conduct
+    url: /code-of-conduct/
+
+categories:
+  - basics
+  - html
+  - css
+  - challenges
+  - resources
+
+
+# plugins:
+#   - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
