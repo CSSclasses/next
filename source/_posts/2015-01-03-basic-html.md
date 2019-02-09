@@ -4,28 +4,46 @@ title: "Basic HTML"
 category: html
 ---
 
-## Basic HTML
+HTML is short for "Hypertext Markup Language". It's a language to annotate (or markup) any content so it can be displayed on an electronic device. Hypertext refers to those displayed texts (or documents) which are linked to each other by hyperlinks.
+
+This somewhat abstract definition describes the most fundamental part of any website. Almost every website you see in a browser uses HTML to display its content. How the HTML is created by a developer might differ. But in the end, content needs to be annotated to be displayed correctly.
+
+Let's start by looking at the language HTML.
+
 * [Elements and Tags](#elements-and-tags)
 * [Pageflow](#pageflow)
+* [How to start?](#how-to-start)
 
-### Elements and Tags
-Elements and Tags are the building blocks of HTML.
+## Elements and Tags
+Elements and Tags are the building blocks of HTML. Let's look at a few examples:
 
-Elements are what makes up a HTML document. You can put elements inside of other elements. An element can include three things: a tag, attributes, and content.
+{% highlight HTML %}
+<h1>Learning Materials</h1>
+<p class="paragraph">This is a sentence inside a paragraph.</p>
+<a href="about.html">This is a link</a>
+{% endhighlight %}
 
-A Tag is the thing that indicates an element’s purpose. For example, the `<p>` tag indicates a paragraph of text is in that element, and the `<li>` represents a ‘list item’. You’ll notice they’re always surrounded by angle brackets. Opening and Closing tags mark the beginning and end of an element and wrap its content, like so:
+Elements are what makes up an HTML document. An element can include three things: a tag, attributes, and content.
+
+In the example above,
+* **Tags** are `<h1></h1>` (used for a headline), `<p></p>` (for a paragraph) and `<a></a>` (a link to another page).
+* **Attributes** are `class` or `href`. They provide all kinds of additional information to the browser.
+* **Content** is everything inside the tags. This will actually be displayed in the browser.
+
+### Tags
+A Tag is the thing that indicates an element’s purpose. For example, the `<p>` tag indicates a paragraph of text is in that element, and the `<li>` represents a ‘list item’.
+
+You’ll notice, tags are always surrounded by angle brackets. Opening and Closing tags mark the beginning and end of an element and wrap its content, like so:
 
 {% highlight HTML %}
 <p>This is a paragraph.</p>
 {% endhighlight %}
 
-You can see the closing tag includes a `/` before its name; otherwise it would be another opening tag!
+You can see the closing tag includes a `/` before its name; otherwise it would be another opening tag. This means: Always double-check that you’ve closed all your elements; otherwise, a browser can and will get mixed up trying to understand your HTML document.
 
-Always double-check that you’ve closed all your elements; otherwise, a browser can and will get mixed up trying to understand your HTML document.
+Luckily, editors such as Atom or VS Code can help us here. If you start typing the name of a tag, you will see a little popup around your cursor. This offers suitable elements and the editor takes care of writing the opening and closing tags. Try it out by starting to type an "a". With the keyboard keys `arrow-up ▲` and `arrow-down ▼`, you can choose the desired tag.
 
-Lastly, having elements inside of each other (“nesting”) looks just like this:
-
-
+You can also put elements inside of other elements. This is called "nesting elements".
 
 {% highlight HTML %}
 <p>This is a sentence, with an <em>em</em> element ("emphasize") inside of it.</p>
@@ -33,46 +51,17 @@ Lastly, having elements inside of each other (“nesting”) looks just like thi
 
 or this:
 
-
-
 {% highlight HTML %}
-<div id="main-container">
+<div id="first" class="main-container">
   <h1>The h1 tag indicates the primary header of the document.</h1>
-  <p>Some text.</p>
+  <p class="teaser">Some text <a href="other-page.html">with a link</a>.</p>
 </div>
 {% endhighlight %}
 
-In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.
+## Attributes
+In the above example, you can see more attributes, e.g. `id="first"`. They start with a lowercase name, and are then almost always followed by an = and a "value" that’s surrounded in double quotes, "like this".
 
-### Pageflow
-In most circumstances "normal flow" is the way that elements are laid out on a web page. Every element in HTML is inside a rectangular box. Shown on the picture below.
+An element can have many attributes, in which case you separate them by spaces. Attributes give information about an element in particular.
 
-<figure>
-  <img src="{{site.baseurl}}/assets/images/pageflow.png" alt="Screenshot of the CSSclasses GitHub page with elements highlighted with black borders.">
-  <figcaption>
-    <p>Every element on the page highlighted.</p>
-  </figcaption>
-</figure>
-
-In our example, each of these boxes are one of two different types: **inline boxes** or **block boxes**. So what exactly does this mean? Let’s start with block boxes.
-
-**Block boxes** are stacked vertically one after the other in the order they’ve been written in the HTML file, and they usually occupy the whole width of the page. They normally start in the upper left corner and go down to the bottom.
-
-Here is a simple example. Don’t get confused by the additional CSS. It’s just there for the purpose of making the boxes visible.
-
-<p data-height="765" data-theme-id="dark" data-slug-hash="PjqpyM" data-default-tab="result" data-user="CSSclasses" data-embed-version="2" data-pen-title="CSSclasses Block Boxes" class="codepen">See the Pen <a href="https://codepen.io/team/CSSclasses/pen/PjqpyM/">CSSclasses Block Boxes</a> by CSSclasses (<a href="https://codepen.io/CSSclasses">@CSSclasses</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-**Inline Boxes** work a bit differently. These boxes will also start at the upper left corner, but will arrange themselves horizontally.
-
-Here’s an example of that as well.
-
-<p data-height="256" data-theme-id="dark" data-slug-hash="Pjqmvm" data-default-tab="result" data-user="CSSclasses" data-embed-version="2" data-pen-title="CSSclasses inline box" class="codepen">See the Pen <a href="https://codepen.io/team/CSSclasses/pen/Pjqmvm/">CSSclasses inline box</a> by CSSclasses (<a href="https://codepen.io/CSSclasses">@CSSclasses</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-So HTML elements are by default either **block boxes** or **inline boxes** (of course, there are exceptions to this rule, but we don’t have to worry about that for now). For example, `div` is a block element, and so are headings like `h1` or `h2`. `span` or `strong` on the other hand are **inline elements**. Here are lists for the different elements:
-
-* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block-level elements</a>
-* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente" target="_blank">Inline elements</a>
-
-For now just keep in mind, that every box has some sort of display value.
+## How to start?
+In the beginning, the amount of tags and when to use them can be a bit overwhelming. We've put together a list of [practical elements](practical-elements). 
