@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CSSclasses
-email: your-email@example.com
+# email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  CSSclasses is a one day event for people who are interested in learning how 
+  CSSclasses is a one day event for people who are interested in learning how
   they can create and manipulate elements on a website.
 keywords: >-
   CSS, HTML, learning, co-learning, workshop, frontend, web developement
@@ -25,6 +25,7 @@ url: "https://cssclass.es/" # the base hostname & protocol for your site, e.g. h
 faviconurl: "/assets/favicons"
 twitter_username: cssclasses
 github_username:  cssclasses
+permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown
