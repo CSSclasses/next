@@ -93,7 +93,7 @@ ol {
   @include bp(x) { padding-left: 0; }
 }
 
-ul li::before {
+ul > li::before {
   background-color: $color-persian-red;
   content: '';
   display: block;
@@ -102,6 +102,18 @@ ul li::before {
   position: absolute;
   top: .75rem;
   width: .5rem;
+}
+
+ul ul > li::before {
+  background-color: $color-persian-red;
+  content: '';
+  display: block;
+  height: .5rem;
+  left: -1.5 * $base-unit;
+  position: absolute;
+  top: .75rem;
+  width: .5rem;
+  border-radius: 50%;
 }
 
 ol { counter-reset: item;
