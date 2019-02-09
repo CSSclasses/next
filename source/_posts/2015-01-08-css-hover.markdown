@@ -7,7 +7,7 @@ category: css
 ### Hover
 Hover is a small example of how you can add some fun little interactivity to your site. Take our `div` example from above and let’s add a little bit to our CSS:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 div {

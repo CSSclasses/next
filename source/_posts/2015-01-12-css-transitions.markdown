@@ -7,7 +7,7 @@ category: css
 ### Transition
 Transitions are a nice way to add some interactive animations to your site. If you add a transition to an element, the browser will automatically animate between two states when they change. To try that you can combine what you just learned about classes and `:hover` and add the `transition` property to the mix:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>
@@ -43,7 +43,7 @@ data-embed-version="2" data-pen-title="CSSclasses :hover" class="codepen">See th
 
 Notice how we used a very complicated transition shorthand here:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 transition: 1s width 0.2s ease-out, 2s background-color, 0.5s height 0.5s;
@@ -51,7 +51,7 @@ transition: 1s width 0.2s ease-out, 2s background-color, 0.5s height 0.5s;
 
 Let’s break it down: `1s width 0.2s ease-out` are the values that define the transition just for the width. The shorthand syntax is:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 transition: transition-duration transition-property transition-delay transition-timing-function;

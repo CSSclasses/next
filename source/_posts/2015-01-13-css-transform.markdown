@@ -10,7 +10,7 @@ Transforms can be used to manipulate elements. You can take any element and add 
 
 Let’s go through these one by one. `translate` can be used in two different ways:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 .movedownright {
@@ -27,7 +27,7 @@ Both classes `.movedownright` and `.movedownright2` manipulate any element in th
 
 Using `skew` or `skewX` and `skewY` you can skew your elements by given angles on the x- or y-axis. With rotate you can `rotate` your elements by a given angle.
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 .skewme {

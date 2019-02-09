@@ -7,7 +7,7 @@ category: css
 ### Class Selector
 Until now we used the element selector to apply styles to an element. What’s wrong with that? Nothing, until you want to have two or more differently styled `div`s on your page.
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>
@@ -31,7 +31,7 @@ Until now we used the element selector to apply styles to an element. What’s w
 
 Copy this code example into your html file, and check out what it looks like in the browser. Now let’s say the second `div` should be blue. We can achieve that by assigning classes to the `div`s in our HTML. We can then apply styles to each class in our CSS:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>

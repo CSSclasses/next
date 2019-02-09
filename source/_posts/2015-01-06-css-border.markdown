@@ -7,7 +7,7 @@ category: css
 ### Border
 You can also put a nice `border` around your elements. Try this:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>
@@ -30,7 +30,7 @@ You can also put a nice `border` around your elements. Try this:
 
 Now you assigned your `div` to have a `black` border that is `5px` thick and `solid`. Let’s dissect the border property a little bit with a different border and a generic description:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 border: 20px dashed #ff88aa;

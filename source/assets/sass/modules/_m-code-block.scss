@@ -31,7 +31,6 @@ pre {
 
 pre code { font-size: 1em; }
 
-// COLOR SCHEME = LIGHT !DEFAULT
 pre code,
 .hljs-tag { color: $color-mine-shaft; }
 
@@ -41,13 +40,3 @@ pre code,
 .hljs-class { color: $color-persian-red; }
 
 .hljs-comment { color: $color-dove-gray; }
-
-
-// COLOR SCHEME = DARK
-.highlight.is--dark {
-
-  pre { background-color: $color-mine-shaft; }
-
-  pre code,
-  .hljs-tag { color: $color-white; }
-}

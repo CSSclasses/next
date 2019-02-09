@@ -16,7 +16,7 @@ The `:nth-of-type` works almost like the `:nth-child`. But `:nth-child` doesn't 
 
 The `~` sibling selector selects all elements that are *neighbors* of a selected element. So if you take the following example, simple rules can add dynamic behavior to your collection of fruits and vegetables:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 .vegetable-checkbox:checked ~ .vegetable { background-color: #aaf0bb; }

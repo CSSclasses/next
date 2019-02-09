@@ -9,7 +9,7 @@ The `font-family` CSS property allows for a prioritized list of font family name
 
 You should always add at least one generic family in a font-family list, since there’s no guarantee that a specific font is installed on the computer or can be downloaded.
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 body {
@@ -21,7 +21,7 @@ Font family names must either be given quoted as strings, or unquoted as a seque
 
 Here a few examples how it’s done right:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 body {
@@ -39,7 +39,7 @@ p {
 
 Keep going with our example let’s add a font-family to the `div` we’ve created before.
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>
@@ -65,7 +65,7 @@ If you hit refresh (CMD + R) again, your font-family should have changed from th
 
 The `font-size` property allows you to set a font size for the text in your Element. There are different ways to set font-sizes that can get a little tricky, so let us only use the most simple technique for now (you should really revisit this topic later). We will assign fixed pixel values to our elements:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>

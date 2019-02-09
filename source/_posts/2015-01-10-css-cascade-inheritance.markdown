@@ -30,7 +30,7 @@ Imagine you are styling a document with some paragraphs. All these paragraphs sh
 
 Here is one way to do this:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <head>
@@ -96,7 +96,7 @@ When we talk about an HTML document, we often describe it as a family tree. When
 
 Consider the following document:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <html>
@@ -131,7 +131,7 @@ For this document, the following statements are true:
 
 One way we can make use of these relationships in our CSS is through _inheritance_. Inheritance means that some CSS properties, like text color or font size, get passed down, or _inherited_ from parent to children and further descendants. So if we want all the text in our document to be green, instead of styling every single element we can add the following CSS:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 body {
@@ -143,7 +143,7 @@ All visible elements in an HTML document are descendants of the body element. Th
 
 Now let's make this document a bit more interesting:
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <html>
@@ -180,7 +180,7 @@ You will notice that the `a`-elements don't inherit the text color of their ance
 
 Unfortunately, blue on green is not very readable. It might be a good idea to change the link color for the `footer` by adding the following CSS:
 
-{% include switch.html %}
+
 
 {% highlight CSS %}
 footer a {
@@ -211,7 +211,7 @@ Specificity means that a rule that is _more specific_ overpowers a rule that is 
 
 Some selectors are more specific by default. For example a _class selector_ will always have a higher specificity than an _element selector_. This makes sense, because selecting only elements with a certain class attribute is _more specific_ than selecting _every_ element of a type.
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <html>
@@ -240,7 +240,7 @@ The class selector `.danger-link` is even more specific, therefore it overwrites
 
 It is important to keep in mind that in the cascade _specificity beats the order_ of rules in your stylesheet. If a rule is followed by another rule with the _same specificity_, the second rule overwrites the first. If the first rule has a _higher specificity_, the first rule still overwrites any less specific rules that come after it.
 
-{% include switch.html %}
+
 
 {% highlight HTML %}
 <html>
