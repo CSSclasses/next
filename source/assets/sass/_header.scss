@@ -46,7 +46,14 @@
   @include bp(xx) { margin-bottom: 4 * $base-unit; }
 }
 
+.page-header__h2,
+.page-header__h2-sub,
+.page-header__h3 {
+  @extend %sans-serif;
+}
+
 .page-header__h2 {
+  @extend %sans-serif;
   text-align: center;
   color: $color-white;
   max-width: 45rem;
