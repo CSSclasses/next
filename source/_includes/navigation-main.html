@@ -1,13 +1,14 @@
-<nav class="navigation__element">
-  <img class="navigation__logo" src="{{ site.baseurl }}/assets/svg/logo--is-white.svg" alt="">
+<nav class="navigation__element l-width-extended" id="js-main-nav">
+  <button class="navigation__toggle" id="open-button">Menu</button>
+  <button class="navigation__close" id="close-button">Close Navigation</button>
   <ul class="navigation__list">
   {% for link in site.navigation %}
       {% assign current = nil %}
       {% if page.url == link.url %}
           {% assign current = 'current' %}
       {% endif %}
-      <li class="{{ current }} navigation__list-item">
-          <a class="navigation__a hover-effect" data-hover="{{ link.title }}"href="{{ link.url }}">{{ link.title }}</a>
+      <li class="navigation__list-item">
+          <a class="navigation__a {{ current }} hover-effect" data-hover="{{ link.title }} "href="{{ link.url }}">{{ link.title }}</a>
       </li>
   {% endfor %}
   </ul>

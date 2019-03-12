@@ -41,17 +41,17 @@ navigation:
   - title: Home
     url: /
   - title: Learning Materials
-    url: /materials/
-  - title: About
-    url: /about/
+    url: /materials
   - title: Coaches
-    url: /coaches/
+    url: /coaches
   - title: Attendees
-    url: /attendees/
+    url: /attendees
   - title: Run Your Own Event
-    url: /run-your-own-event/
+    url: /run-your-own-event
+  - title: About
+    url: /about
   - title: Code of Conduct
-    url: /code-of-conduct/
+    url: /code-of-conduct
 
 categories:
   - basics

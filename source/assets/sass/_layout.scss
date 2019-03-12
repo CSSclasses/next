@@ -55,7 +55,7 @@ body {
 
 .l--has-pt { padding-top: 4 * $base-unit;
 
-  @include bp(x) { padding-top: 8 * $base-unit; }
+  @include bp(x) { padding-top: 6 * $base-unit; }
 }
 
 .l-container-content {
